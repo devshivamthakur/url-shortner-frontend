@@ -7,6 +7,7 @@ body {
   
   .App {
     text-align: center;
+    padding-bottom: 10px;
   }
   
   .App-header {
@@ -53,15 +54,7 @@ body {
     color: #bbbbbb;
   }
   
-  button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #bb86fc;
-    color: #121212;
-    border: none;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
-  }
+  
   
   button:hover {
     background-color: #9933cc;
@@ -102,3 +95,13 @@ body {
     background-color: #9933cc;
   }
   
+  #actionbutton{
+      padding: 10px;
+      font-size: 16px;
+      background-color: #bb86fc;
+      color: #121212;
+      border: none;
+      cursor: pointer;
+      border-radius: 0 0px 0px 0;
+
+  }

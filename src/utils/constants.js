@@ -32,6 +32,6 @@ export const STRINGS = {
       }
     },
     invalidShortId:"Invalid shortId. please provide a valid shortId.",
-    we_are_unable_to_find_shortUrl:"We are unable to find the requested shortUrl"
+    we_are_unable_to_find_shortUrl:"We are unable to find the requested shortUrl",
   };
   

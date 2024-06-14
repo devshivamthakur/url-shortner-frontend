@@ -5,7 +5,6 @@ const CREATE_SHORT_API = 'url-shortener';
 
 export const createShortIdByUrl = async (url) => {
     try {
-        console.log(process.env)
         const response = await axios.post(`${BASE_URL}/${CREATE_SHORT_API}`, { uri: url });
         return response.data;
     } catch (error) {
