@@ -20,7 +20,7 @@ This project is a URL shortener web application built with React. The applicatio
 
 ## Visit the Application
 
-To use the URL shortener, visit [this link](https://shortnerurl.github.io/).
+To use the URL shortener, visit [https://shortnerurl.github.io/](https://shortnerurl.github.io/).
 
 ## Usage
 
