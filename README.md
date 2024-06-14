@@ -15,8 +15,8 @@ This project is a URL shortener web application built with React. The applicatio
 
 - Shorten long URLs
 - Copy shortened URLs to clipboard
-- View and manage your shortened URLs
-- User-friendly interface
+- Automatically generate QR codes for shortened URLs
+- Download QR codes for shortened URLs
 
 ## Visit the Application
 
@@ -32,9 +32,9 @@ To use the URL shortener, visit [https://shortnerurl.github.io/](https://shortne
 2. **Copy a URL:**
    - Click on the "Copy" button next to a shortened URL to copy it to the clipboard.
 
-3. **Manage URLs:**
-   - View your list of shortened URLs.
-   - Optionally add functionality to delete or edit URLs.
+3. **Generate and Download QR Codes:**
+   - The application automatically generates a QR code for each shortened URL.
+   - Click on the "Download icon" button next to a shortened URL to download the QR code image.
 
 ## Technologies Used
 
