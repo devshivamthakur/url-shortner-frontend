@@ -2,12 +2,24 @@ import axios from 'axios';
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 const CREATE_SHORT_API = 'url-shortener';
+console.log(process.env)
 
 export const createShortIdByUrl = async (url) => {
     try {
-        const response = await axios.post(`${BASE_URL}/${CREATE_SHORT_API}`, { uri: url });
+        const response = await axios({
+            method: 'post',
+            url: `${BASE_URL}/${CREATE_SHORT_API}`,
+            data: {
+                uri: url
+            },
+            headers:{
+                'Test-Key': process.env.REACT_APP_SECURITY_JWT_TOKEN
+            }
+        })
+        console.log(response);
         return response.data;
     } catch (error) {
+        console.log(error)
         return null;
     }
 }
