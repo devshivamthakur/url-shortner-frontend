@@ -74,4 +74,4 @@ function UrlShortener({ placeholder, button, errorEnterUrl, errorValidUrl, descr
   );
 }
 
-export default UrlShortener;
+export default React.memo(UrlShortener);
