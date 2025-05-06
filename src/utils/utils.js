@@ -21,7 +21,9 @@ export const copyToClipboard = async (str) => {
   
     try {
       const dataUrl = await toPng(divElement);
-      window?.ReactNativeWebView?.postMessage(JSON.stringify({ type: 'download', dataUrl }));
+      const base64 = dataUrl.split(',')[1]; // Remove data:image/png;base64, prefix
+      //send correct base64 image to react native webview
+      window?.ReactNativeWebView?.postMessage(JSON.stringify({ type: 'download', dataUrl:base64 }));
       const timestamp = new Date().toISOString().replace(/[:.-]/g, '');
       const filename = `shortnerUrl-${timestamp}.png`;
       saveAs(dataUrl, filename);
